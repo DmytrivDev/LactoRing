@@ -74,6 +74,11 @@
         display: block;
         width: 1.5rem;
         height: 1.5rem;
+        img {
+          width: 100%;
+          filter: brightness(0) saturate(100%) invert(46%) sepia(68%)
+            saturate(2043%) hue-rotate(336deg) brightness(100%) contrast(106%);
+        }
       }
     }
   }
@@ -132,6 +137,11 @@
           display: block;
           width: 1.5rem;
           height: 1.5rem;
+          img {
+            width: 100%;
+            filter: brightness(0) saturate(100%) invert(46%) sepia(68%)
+              saturate(2043%) hue-rotate(336deg) brightness(100%) contrast(106%);
+          }
         }
       }
     }
