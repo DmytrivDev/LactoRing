@@ -1,6 +1,7 @@
 import { lockScroll, unlockScroll } from './lockscroll.js';
 
 const burger = document.querySelector('.burger');
+const headerBody = document.querySelector('.header__body');
 const mobMenu = document.querySelector('.mobmenu');
 const mobMenuBody = document.querySelector('.mobmenu__body');
 const mobNavLinks = document.querySelectorAll('.mobmenu .navmenu__list a');
@@ -10,13 +11,23 @@ let isMenuOpened = false;
 function toggleMenu() {
   if (burger && mobMenu) {
     isMenuOpened = !isMenuOpened;
+
+    if (isMenuOpened) {
+    }
+
     burger.classList.toggle('isOpened');
     mobMenu.classList.toggle('isOpened');
 
     if (isMenuOpened) {
+      headerBody.classList.add('isOpened');
+
       lockScroll(mobMenuBody);
     } else {
       unlockScroll();
+
+      setTimeout(() => {
+        headerBody.classList.remove('isOpened');
+      }, 250);
     }
   }
 }
@@ -27,6 +38,10 @@ function closeMenu() {
     burger.classList.remove('isOpened');
     mobMenu.classList.remove('isOpened');
     unlockScroll();
+
+    setTimeout(() => {
+      headerBody.classList.remove('isOpened');
+    }, 250);
   }
 }
 

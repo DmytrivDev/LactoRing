@@ -6,23 +6,22 @@
   .mobmenu {
     display: block;
     position: absolute;
-    top: -100%;
+    top: 100%;
     left: 0;
     right: 0;
     z-index: 100;
     width: 100%;
     height: calc(100vh - 100%);
     background-color: var(--cw);
-    transform: translateY(-100%);
+    transform: translateX(100%);
 
-    transition: all 0.35s ease-in;
-    -webkit-transition: all 0.35s ease-in;
-    -o-transition: all 0.35s ease-in;
+    transition: all 0.25s ease-in;
+    -webkit-transition: all 0.25s ease-in;
+    -o-transition: all 0.25s ease-in;
     -webkit-overflow-scrolling: touch;
 
     &.isOpened {
-      transform: translateY(0);
-      top: 100%;
+      transform: translateX(0);
     }
 
     &__body {

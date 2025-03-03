@@ -1,8 +1,80 @@
 .header__main {
   .actions {
+    display: flex;
+    align-items: center;
+    gap: 0 1.875rem;
     &__lang {
+      flex: 0 0 auto;
+      &.lang-mob {
+        display: none;
+      }
+      & > li {
+        position: relative;
+        &:hover {
+          & > a {
+            &::after {
+              transform: rotateX(180deg);
+            }
+          }
+
+          & > .sub-menu,
+          & > ul {
+            visibility: visible;
+            opacity: 1;
+          }
+        }
+
+        & > a {
+          display: flex;
+          align-items: center;
+          gap: 0 0.25rem;
+          &::after {
+            content: "";
+            flex-shrink: 0;
+            width: 0.875rem;
+            height: 0.875rem;
+            background-size: 0.875rem 0.875rem;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-image: var(--vectorDef);
+            transition: all 0.15s ease-in;
+          }
+        }
+
+        & > .sub-menu,
+        & > ul {
+          visibility: hidden;
+          opacity: 0;
+          position: absolute;
+          z-index: 2;
+          top: 100%;
+          left: -0.25rem;
+          right: -0.25rem;
+          padding: 0 0.25rem;
+          background-color: var(--cp);
+          border-radius: 0 0 0.5rem 0.5rem;
+          transition: all 0.15s ease-in;
+          a {
+            transition: all 0.15s ease-in;
+            &:hover {
+              color: var(--cr);
+            }
+          }
+        }
+      }
+      a {
+        display: block;
+      }
     }
     &__soc {
+      flex: 0 0 auto;
+      display: flex;
+      gap: 0 0.5rem;
+      a {
+        display: block;
+        width: 1.5rem;
+        height: 1.5rem;
+      }
     }
   }
 }
@@ -16,13 +88,52 @@
 
   .mobmenu {
     .actions {
-    }
-  }
-}
+      padding-bottom: 2.8125rem;
+      &__lang {
+        position: relative;
+        display: none;
+        align-items: center;
+        gap: 0 1.3125rem;
+        width: fit-content;
+        margin-bottom: 2.8125rem;
+        &.lang-mob {
+          display: flex;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translateX(-50%) translateY(-50%);
+          width: 1px;
+          height: 0.8125rem;
+          background-color: var(--cr);
+        }
 
-@media screen and (max-width: 500px) {
-  .mobmenu {
-    .actions {
+        & > li {
+          &.current-lang {
+            a {
+              opacity: 1;
+            }
+          }
+          a {
+            color: var(--cr);
+            font-weight: 600;
+            display: block;
+            opacity: 0.5;
+            transition: all 0.15s ease-in;
+          }
+        }
+      }
+      &__soc {
+        display: flex;
+        gap: 0 0.625rem;
+        a {
+          display: block;
+          width: 1.5rem;
+          height: 1.5rem;
+        }
+      }
     }
   }
 }
