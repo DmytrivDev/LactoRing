@@ -21,5 +21,29 @@
 /* Home */
 @import url('./sections/home/hero.scss');
 
+/* Lacto */
+/* @import url('./sections/lacto/lacto.scss'); */
+
+/* Vaginosis */
+/* @import url('./sections/vaginosis/vaginosis.scss'); */
+
+/* Research */
+/* @import url('./sections/research/research.scss'); */
+
+/* Blog */
+/* @import url('./sections/blog/blog.scss'); */
+
+/* Article */
+/* @import url('./sections/article/article.scss'); */
+
+/* Contacts */
+/* @import url('./sections/contacts/contacts.scss'); */
+
+/* Policy */
+/* @import url('./sections/policy/policy.scss'); */
+
+/* Error */
+/* @import url('./sections/error/error.scss'); */
+
 /* Footer */
 @import url('./sections/footer/footer.scss');
