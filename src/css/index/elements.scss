@@ -1,5 +1,67 @@
+.sec-wrap {
+  border-radius: 1.25rem;
+  background-color: var(--cp);
+  padding: 3.75rem;
+}
+
+.pd1,
+.mr1 {
+  padding-top: 9.375rem;
+}
+.pd2,
+.mr2 {
+  padding-top: 6.25rem;
+}
+
+.btn-def {
+  flex-shrink: 0;
+  display: block;
+  text-align: center;
+  width: fit-content;
+  min-width: 13.1875rem;
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: var(--cw);
+  background-color: var(--cr2);
+  border-radius: 0.625rem;
+  padding: 0.625rem 1.875rem;
+  border: 0.125rem solid var(--cr2);
+  transition: all 0.15s ease-in;
+
+  &:hover {
+    background-color: transparent;
+    color: var(--cr2);
+  }
+
+  &.bg-trn {
+    background-color: transparent;
+    color: var(--cr2);
+    &:hover {
+      background-color: var(--cr2);
+      color: var(--cw);
+    }
+  }
+}
+
 @media screen and (max-width: 960px) {
-  .class {
+  .sec-wrap {
+    border-radius: 0.625rem;
+    padding: 5rem 1.25rem;
+  }
+
+  .pd1,
+  .mr1 {
+    padding-top: 5rem;
+  }
+  .pd2,
+  .mr2 {
+    padding-top: 3.75rem;
+  }
+
+  .btn-def {
+    margin: 0 auto;
+    width: 100%;
+    min-width: 19.9375rem;
   }
 }
 

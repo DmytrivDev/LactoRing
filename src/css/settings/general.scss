@@ -29,6 +29,9 @@ body {
   max-width: 85rem;
   padding: 0 2.5em;
   margin: 0 auto;
+  &.wider {
+    padding: 0 6.25rem;
+  }
 }
 
 /* --------- Adaptive desktop (1440px) --------- */
@@ -54,6 +57,10 @@ body {
 
   [class*="__container"] {
     padding: 0 1em;
+
+    &.wider {
+      padding: 0 2.25em;
+    }
   }
 }
 
@@ -67,5 +74,9 @@ body {
 
   [class*="__container"] {
     padding: 0 0.5em;
+
+    &.wider {
+      padding: 0 1.75em;
+    }
   }
 }
