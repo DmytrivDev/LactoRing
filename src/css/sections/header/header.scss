@@ -39,7 +39,7 @@
 @media screen and (max-width: 960px) {
   .header {
     &__main {
-      padding-top: 0.5rem;
+      padding-top: 1rem;
     }
     &__body {
       border-radius: 0.625rem;
@@ -102,6 +102,14 @@
           opacity: 1;
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .header {
+    &__main {
+      padding-top: 0.5rem;
     }
   }
 }
