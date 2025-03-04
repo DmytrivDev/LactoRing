@@ -18,17 +18,18 @@
   }
 
   a {
-    text-decoration: underline !important;
-    text-underline-position: under;
-    text-decoration-thickness: 1px !important;
+    color: var(--cr);
+    &:hover {
+      text-decoration: underline !important;
+    }
   }
 
   b {
-    display: block;
-    font-size: 1.125em;
-    font-weight: 500;
-    line-height: 1.556em;
-    margin-top: 1em;
+    font-weight: 700;
+  }
+
+  span {
+    color: var(--cr);
   }
 
   h1,
@@ -37,14 +38,19 @@
   h4,
   h5,
   h6 {
-    font-weight: 600;
+    font-weight: 700;
   }
 
-  h2,
+  h2 {
+    font-size: 1.125em;
+    line-height: 1.4em;
+    margin-top: 2.222em;
+    margin-bottom: 1.111em;
+  }
   h3 {
-    font-size: 1.25em;
-    line-height: 1.7em;
-    margin-top: 1em;
+    font-size: 1em;
+    line-height: 1.4em;
+    margin-top: 1.25em;
     margin-bottom: 0.75em;
   }
 
@@ -52,36 +58,61 @@
   h5,
   h6 {
     font-size: 1em;
-    line-height: 1.6em;
-    margin-top: 1em;
+    line-height: 1.4em;
+    margin-top: 1.25em;
     margin-bottom: 0.75em;
+  }
+
+  .emb-list {
+    margin: 1.25em 0;
+    border-radius: 1.25rem;
+    background-color: var(--cp);
+    padding: 2.5rem;
+
+    & > * {
+      margin-top: 0.75em;
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &:last-child {
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important;
+        border-bottom: none !important;
+      }
+    }
   }
 
   ul {
     margin-left: 1em;
-
     li {
-      margin-bottom: 1em;
+      margin-bottom: 0.75em;
       margin-left: 0.5em;
       list-style: disc;
-
       &:last-child {
         margin-bottom: 0;
+      }
+      ol {
+        margin-top: 0.75em;
+        padding-left: 4.5em;
       }
     }
   }
 
   ol {
-    padding-left: 1em;
+    padding-left: 1.5em;
     margin-left: 0;
-
     li {
       margin-bottom: 0.5em;
       list-style: decimal;
       margin-left: 0;
-
       &:last-child {
         margin-bottom: 0;
+      }
+      ul {
+        margin-top: 0.75em;
+        margin-left: 4.125em;
       }
     }
   }
@@ -140,23 +171,13 @@
 
 @media screen and (max-width: 960px) {
   .embeded {
-    font-size: 0.875em;
-    line-height: 1.4em;
-
-    b {
-      font-size: 1em;
-      line-height: 1.45em;
+    h2 {
+      margin-top: 1.667em;
     }
 
-    h2,
-    h3 {
-      font-size: 1em;
-    }
-
-    h4,
-    h5,
-    h6 {
-      font-size: 0.875em;
+    .emb-list {
+      border-radius: 0.625rem;
+      padding: 1.875rem;
     }
   }
 }
