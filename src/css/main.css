@@ -29,7 +29,7 @@
 /* @import url('./sections/vaginosis/vaginosis.scss'); */
 
 /* Research */
-/* @import url('./sections/research/research.scss'); */
+@import url('./sections/research/research.scss');
 
 /* Blog */
 /* @import url('./sections/blog/blog.scss'); */

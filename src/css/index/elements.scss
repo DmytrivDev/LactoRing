@@ -13,6 +13,26 @@
   padding-top: 6.25rem;
 }
 
+.heading {
+  margin-bottom: 3.75rem;
+}
+
+.tl1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  span {
+    font-size: 3.75rem;
+    color: var(--cr);
+  }
+}
+.tl2 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  span {
+    color: var(--cr);
+  }
+}
+
 .btn-def {
   flex-shrink: 0;
   display: block;
@@ -58,10 +78,25 @@
     padding-top: 3.75rem;
   }
 
+  .heading {
+    margin-bottom: 1.875rem;
+  }
+
+  .tl1 {
+    font-size: 1.375rem;
+    span {
+      font-size: 2.25rem;
+    }
+  }
+  .tl2 {
+    font-size: 1.5rem;
+  }
+
   .btn-def {
     margin: 0 auto;
     width: 100%;
-    min-width: 19.9375rem;
+    min-width: auto;
+    max-width: 19.9375rem;
   }
 }
 
