@@ -17,6 +17,12 @@
   margin-bottom: 3.75rem;
 }
 
+.tl1,
+.tl2 {
+  &.cr {
+    color: var(--cr);
+  }
+}
 .tl1 {
   font-size: 2.25rem;
   font-weight: 700;
