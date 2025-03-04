@@ -35,7 +35,7 @@
 @import url('./sections/blog/blog.scss');
 
 /* Article */
-/* @import url('./sections/article/article.scss'); */
+@import url('./sections/article/article.scss');
 
 /* Contacts */
 /* @import url('./sections/contacts/contacts.scss'); */

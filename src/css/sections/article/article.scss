@@ -1,0 +1,129 @@
+.article__heading {
+  margin-bottom: 2.5rem;
+  .tl2 {
+    text-align: center;
+    margin-bottom: 0.75rem;
+  }
+}
+.article__date {
+  color: var(--cc);
+  text-align: center;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+.article__img {
+  border-radius: 1.25rem;
+  overflow: hidden;
+  padding-top: 31.25%;
+  margin-bottom: 2.5rem;
+}
+.article__main {
+  max-width: 38.125rem;
+  margin: 0 auto;
+  .btn-def {
+    margin: 0 auto;
+    margin-top: 2.5rem;
+  }
+}
+.article__content {
+  font-size: 1.125em;
+
+  & > * {
+    margin-top: 0.889em;
+
+    &:first-child {
+      margin-top: 0;
+    }
+    &:last-child {
+      margin-bottom: 0 !important;
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 700;
+  }
+
+  h2,
+  h3 {
+    font-size: 1.333em;
+    line-height: 1.867em;
+    margin-top: 1.25em;
+    margin-bottom: 0.667em;
+  }
+
+  ul {
+    border-radius: 1.25rem;
+    background-color: var(--cp);
+    padding: 2.5rem;
+    li {
+      color: var(--cd);
+      position: relative;
+      font-size: 0.889em;
+      font-weight: 500;
+      margin-bottom: 0.75em;
+      padding-left: 1.5em;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+
+        top: 0.5rem;
+        left: 0.5625rem;
+
+        width: 0.375rem;
+        height: 0.375rem;
+        border-radius: 50%;
+        background-color: var(--cd);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .article__container {
+    padding: 0 2.25em;
+  }
+  .article__heading {
+    margin-bottom: 1.875rem;
+    .tl2 {
+      margin-bottom: 0.5rem;
+    }
+  }
+  .article__date {
+    font-size: 0.875rem;
+  }
+  .article__img {
+    border-radius: 0.625rem;
+    padding-top: 55.24%;
+    margin-bottom: 1.875rem;
+  }
+  .article__main {
+    max-width: 100%;
+    .btn-def {
+      margin-top: 1.875rem;
+    }
+  }
+  .article__content {
+    ul {
+      border-radius: 0.625rem;
+      padding: 1.875rem;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .article__container {
+    padding: 0 1.75em;
+  }
+  .article__img {
+    padding-top: 75.24%;
+  }
+}
