@@ -1,0 +1,19 @@
+.descript__cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+
+  .card-def {
+    max-width: calc((100% - 2 * 1.25rem) / 3);
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .descript__cards {
+    gap: 0.5rem;
+
+    .card-def {
+      max-width: 100%;
+    }
+  }
+}

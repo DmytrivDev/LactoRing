@@ -21,9 +21,11 @@
 
 /* Home */
 @import url('./sections/home/hero.scss');
+@import url('./sections/home/descript.scss');
 
 /* Lacto */
 /* @import url('./sections/lacto/lacto.scss'); */
+@import url('./sections/lacto/aptitude.scss');
 
 /* Vaginosis */
 /* @import url('./sections/vaginosis/vaginosis.scss'); */
@@ -39,9 +41,6 @@
 
 /* Contacts */
 @import url('./sections/contacts/contacts.scss');
-
-/* Policy */
-/* @import url('./sections/policy/policy.scss'); */
 
 /* Error */
 @import url('./sections/error/error.scss');

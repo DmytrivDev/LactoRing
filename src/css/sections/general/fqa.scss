@@ -17,8 +17,11 @@
 }
 .fqa__header {
   padding: 1.875rem 1.875rem 1.25rem 1.875rem;
-  font-size: 1.25rem;
-  font-weight: 500;
+  h2 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    transition: all 0.15s ease-in;
+  }
 }
 .fqa__content {
   font-size: 1.125rem;
@@ -39,7 +42,9 @@
     }
   }
   .fqa__header {
-    font-size: 1.125rem;
+    h2 {
+      font-size: 1.125rem;
+    }
   }
   .fqa__content {
     font-size: 1rem;

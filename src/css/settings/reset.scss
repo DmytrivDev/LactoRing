@@ -43,6 +43,7 @@
         opacity: 1;
       }
       [class*="__head"] {
+        color: var(--cr);
         &::after {
           transform: rotateX(180deg);
         }
