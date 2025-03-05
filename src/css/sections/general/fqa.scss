@@ -1,0 +1,47 @@
+.fqa__body {
+  border-radius: 1.25rem;
+  background-color: var(--cp);
+  padding: 1.875rem 3.75rem;
+}
+.fqa__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 51.25rem;
+
+  .ac {
+    border-radius: 1.25rem;
+    background-color: transparent;
+    padding-bottom: 0.625rem;
+  }
+}
+.fqa__header {
+  padding: 1.875rem 1.875rem 1.25rem 1.875rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.fqa__content {
+  font-size: 1.125rem;
+  color: var(--cd);
+  padding: 0 1.875rem 1.875rem 1.875rem;
+}
+
+@media screen and (max-width: 960px) {
+  .fqa__body {
+    border-radius: 0.625rem;
+    padding: 3.125rem 1.25rem;
+  }
+  .fqa__list {
+    width: 100%;
+
+    .ac {
+      border-radius: 0.625rem;
+    }
+  }
+  .fqa__header {
+    font-size: 1.125rem;
+  }
+  .fqa__content {
+    font-size: 1rem;
+  }
+}
