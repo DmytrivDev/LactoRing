@@ -23,6 +23,7 @@
 @import url('./sections/home/hero.scss');
 @import url('./sections/home/descript.scss');
 @import url('./sections/home/episode.scss');
+@import url('./sections/home/recovery.scss');
 
 /* Lacto */
 /* @import url('./sections/lacto/lacto.scss'); */
