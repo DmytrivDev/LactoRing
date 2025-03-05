@@ -2,6 +2,7 @@
   position: relative;
 }
 .hero__content {
+  min-height: 27.25rem;
   max-width: 42.5rem;
   .tl1 {
     margin-bottom: 0.5rem;
@@ -31,6 +32,7 @@
     display: flex;
     flex-direction: column;
     gap: 1.875rem 0;
+    min-height: calc(40vw - 4.125rem);
     max-width: 100%;
     padding-right: 50%;
     .tl1 {
@@ -51,6 +53,7 @@
 
 @media screen and (max-width: 768px) {
   .hero__content {
+    min-height: auto;
     padding-right: 0;
   }
   .hero__img {

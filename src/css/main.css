@@ -27,7 +27,7 @@
 @import url('./sections/home/recovery.scss');
 
 /* Lacto */
-/* @import url('./sections/lacto/lacto.scss'); */
+@import url('./sections/lacto/lacto.scss');
 @import url('./sections/lacto/aptitude.scss');
 
 /* Vaginosis */

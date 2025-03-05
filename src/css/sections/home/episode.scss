@@ -5,6 +5,7 @@
   align-items: end;
 }
 .episode__content {
+  min-height: 20.75rem;
   max-width: 38.125rem;
   .tl2 {
     margin-bottom: 1.25rem;
@@ -53,6 +54,7 @@
     display: flex;
     flex-direction: column;
     gap: 1.875rem 0;
+    min-height: calc(40vw - 5.625rem);
     max-width: 100%;
     padding-left: 50%;
     .tl2 {
@@ -85,6 +87,7 @@
 @media screen and (max-width: 768px) {
   .episode__content {
     padding-left: 0;
+    min-height: auto;
   }
   .episode__img {
     position: static;
