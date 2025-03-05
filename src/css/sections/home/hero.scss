@@ -11,6 +11,7 @@
 .hero__btns {
   margin-top: 3.75rem;
   display: flex;
+  flex-wrap: wrap;
   gap: 1.25rem;
 }
 .hero__img {
