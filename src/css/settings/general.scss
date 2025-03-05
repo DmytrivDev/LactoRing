@@ -29,7 +29,7 @@ body {
   max-width: 90rem;
   padding: 0 2.5em;
   margin: 0 auto;
-  &.narrow {
+  &.narr {
     padding: 0 6.25rem;
   }
 }
@@ -58,7 +58,7 @@ body {
   [class*="__container"] {
     padding: 0 1em;
 
-    &.narrow {
+    &.narr {
       padding: 0 2.25em;
     }
   }
@@ -75,7 +75,7 @@ body {
   [class*="__container"] {
     padding: 0 0.5em;
 
-    &.narrow {
+    &.narr {
       padding: 0 1.75em;
     }
   }
