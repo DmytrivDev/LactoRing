@@ -1,12 +1,12 @@
-.recovery__body {
-  position: relative;
+.symptom__body {
+  border-radius: 1.25rem;
+  background-color: var(--cp);
+  padding: 3.75rem;
   display: flex;
-  flex-direction: column;
-  align-items: end;
+  align-items: start;
+  gap: 0 3.75rem;
 }
-.recovery__content {
-  min-height: 40.625rem;
-  max-width: 38.125rem;
+.symptom__content {
   .tl2 {
     margin-bottom: 1.25rem;
   }
@@ -14,22 +14,16 @@
     margin-bottom: 2.5rem;
   }
 }
-.recovery__img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  width: 35.6875rem;
-  height: 40.625rem;
+.symptom__list {
+  margin-bottom: 2.5rem;
   border-radius: 1.25rem;
-  overflow: hidden;
-}
-.recovery__list {
+  background-color: var(--cw);
+  padding: 2.5rem;
   ol,
   ul {
     display: flex;
     flex-direction: column;
-    gap: 0.75rem 0;
+    gap: 1rem 0;
     li {
       position: relative;
       font-size: 1.375rem;
@@ -68,37 +62,36 @@
     }
   }
 }
-.recovery__btns {
-  margin-top: 3.75rem;
-  display: flex;
-  gap: 1.25rem;
+.symptom__img {
+  width: 38.125rem;
+  height: 40.625rem;
+  overflow: hidden;
+  border-radius: 1.25rem;
+  flex-shrink: 0;
 }
 
 @media screen and (max-width: 960px) {
-  .recovery__content {
-    display: flex;
-    flex-direction: column;
+  .symptom__body {
+    border-radius: 0.625rem;
+    padding: 5rem 1.25rem;
+    align-items: stretch;
+    flex-direction: column-reverse;
     gap: 1.875rem 0;
-    min-height: 31.25rem;
-    max-width: 100%;
-    padding-left: 50%;
+  }
+  .symptom__content {
     .tl2 {
-      margin-bottom: 0;
+      margin-bottom: 0.75rem;
     }
     .txt-def {
-      margin-bottom: 0;
+      margin-bottom: 1.875rem;
     }
   }
-  .recovery__img {
-    width: 100%;
-    max-width: calc(50% - 1.875rem);
-    height: 31.25rem;
+  .symptom__list {
+    margin-bottom: 1.875rem;
     border-radius: 0.625rem;
-  }
-  .recovery__list {
+    padding: 1.875rem;
     ol,
     ul {
-      gap: 1rem 0;
       li {
         font-size: 1.125rem;
       }
@@ -112,31 +105,18 @@
       }
     }
   }
-  .recovery__btns {
-    flex-direction: column;
-    margin-top: 0;
-    gap: 0.5rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .recovery__content {
-    padding-left: 0;
-    min-height: auto;
-  }
-  .recovery__img {
-    position: relative;
-    z-index: auto;
-    top: auto;
-    right: auto;
+  .symptom__img {
+    width: 100%;
     height: 28.125rem;
     max-width: 37.5rem;
+    // padding-top: 75.3%;
     margin: 0 auto;
+    border-radius: 0.625rem;
   }
 }
 
 @media screen and (max-width: 670px) {
-  .recovery__img {
+  .symptom__img {
     height: auto;
     padding-top: 75.3%;
   }
